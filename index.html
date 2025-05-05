@@ -1,0 +1,100 @@
+<!-- DEVELOPER: Mohammed Hammoudeh, IS117-004, Spring 2025 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Meals - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Student Meals</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Recipes</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="quick-snacks.html">Quick Snacks</a></li>
+              <li><a class="dropdown-item" href="meal-prep.html">Meal Prep</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="community.html">Community</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="bg-light p-5 text-center">
+    <h1>Welcome to Student Meals</h1>
+    <p class="lead">Quick, affordable, and delicious meals for busy students</p>
+    <form class="d-flex justify-content-center">
+      <input class="form-control w-50 me-2" type="search" placeholder="Search recipes...">
+      <button class="btn btn-success" type="submit">Search</button>
+    </form>
+  </header>
+
+  <!-- Featured Recipes -->
+  <section class="container py-5">
+    <h2 class="text-center mb-4">Featured Recipes</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/avocado-toast.jpg" class="card-img-top" alt="Avocado Toast">
+          <div class="card-body">
+            <h5 class="card-title">Avocado Toast</h5>
+            <p class="card-text">5-minute nutritious breakfast option.</p>
+            <a href="quick-snacks.html" class="btn btn-primary">See Recipe</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/chicken-bowl.jpg" class="card-img-top" alt="Meal Prep Bowl">
+          <div class="card-body">
+            <h5 class="card-title">Meal Prep Chicken Bowl</h5>
+            <p class="card-text">Prep in advance for the week.</p>
+            <a href="meal-prep.html" class="btn btn-primary">See Recipe</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/community-recipes.jpg" class="card-img-top" alt="User Recipes">
+          <div class="card-body">
+            <h5 class="card-title">Community Creations</h5>
+            <p class="card-text">See what other students are cooking.</p>
+            <a href="community.html" class="btn btn-primary">Explore More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="bg-success text-white text-center p-4">
+    <h3>Get a Meal Prep Coupon!</h3>
+    <p>Sign up with your email and get updates and special offers.</p>
+    <form class="d-flex justify-content-center">
+      <input type="email" class="form-control w-50 me-2" placeholder="Enter your email">
+      <button class="btn btn-dark">Sign Up</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p>&copy; 2025 Student Meals. All rights reserved. | Terms of Use</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
